@@ -1,94 +1,72 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="App">
+      {/* Header Section */}
+      <header className="header">
+        <p id="HeadSubtext">Hi! I'm</p>
+        <h1>Ahmad Abrar</h1>
+        <p id="HeadSubtext">High School Senior</p>
+      </header>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+      {/* About Section */}
+      <section className="about">
+        <h2>About Me</h2>
+        <p>
+          Hi! I'm a high school senior passionate about programming, especially Python. 
+          I have intermediate coding skills and I'm learning about neural networks and AI. 
+          Welcome to my portfolio!
+        </p>
+      </section>
+
+      {/* Projects Section */}
+      <section className="projects">
+        <h2>My Projects</h2>
+        <div className="project-card">
+          <h3>Neural Network Project</h3>
+          <p>A Python-based neural network implementation for image classification using TensorFlow.</p>
+        </div>
+        <div className="project-card">
+          <h3>Data Analysis Tool</h3>
+          <p>Python script for analyzing and visualizing large datasets with pandas and matplotlib.</p>
+        </div>
+        <div className="project-card">
+          <h3>Portfolio Website</h3>
+          <p>This responsive portfolio website built with Next.js and deployed on Vercel.</p>
+        </div>
+      </section>
+
+      {/* Skills Section */}
+      <section className="skills">
+        <h2>Skills & Technologies</h2>
+        <ul>
+          <li>Python (Intermediate)</li>
+          <li>Neural Networks (Basic)</li>
+          <li>HTML/CSS/JavaScript</li>
+          <li>React & Next.js</li>
+          <li>Git/GitHub</li>
+          <li>Data Analysis</li>
+        </ul>
+      </section>
+
+      {/* Contact Section */}
+      <section className="contact">
+        <h2>Get In Touch</h2>
+        <p>
+          I'm currently looking for internship opportunities and excited to connect with fellow developers!
+        </p>
+        <div className="contact-links">
+          <a href="https://github.com/Akari-08" target="_blank" rel="noopener noreferrer">
+            GitHub
           </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
+          <a href="mailto:your-email@example.com">
+            Email Me
           </a>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </section>
+
+      {/* Footer */}
+      <footer className="footer">
+        <p>Built with Next.js | Hosted on Vercel | © 2024 Ahmad Abrar</p>
       </footer>
     </div>
   );
