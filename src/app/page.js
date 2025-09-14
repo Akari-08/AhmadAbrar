@@ -2,19 +2,36 @@ export default function Home() {
   return (
     <div className="App">
       {/* Header Section */}
+      <nav className="floating-navbar">
+        <a href="#home" className="nav-btn active">
+          Home
+        </a>
+        <a href="#about" className="nav-btn">
+          About
+        </a>
+        <a href="#projects" className="nav-btn">
+          Projects
+        </a>
+        <a href="#contact" className="nav-btn">
+          Contact
+        </a>
+      </nav>
       <header className="header">
         <p id="HeadSubtext">Hi! I'm</p>
+        <span className="jp-behind">アフマド</span>
         <h1>Ahmad Abrar</h1>
-        <p id="HeadSubtext">High School Senior</p>
+        <p id="HeadSubtext">
+          I am currently a high school student at Old Scona Academic
+        </p>
       </header>
 
       {/* About Section */}
       <section className="about">
         <h2>About Me</h2>
         <p>
-          Hi! I'm a high school senior passionate about programming, especially Python. 
-          I have intermediate coding skills and I'm learning about neural networks and AI. 
-          Welcome to my portfolio!
+          Hi! I'm a high school senior passionate about programming, especially
+          Python. I have intermediate coding skills and I'm learning about
+          neural networks and AI. Welcome to my portfolio!
         </p>
       </section>
 
@@ -23,15 +40,24 @@ export default function Home() {
         <h2>My Projects</h2>
         <div className="project-card">
           <h3>Neural Network Project</h3>
-          <p>A Python-based neural network implementation for image classification using TensorFlow.</p>
+          <p>
+            A Python-based neural network implementation for image
+            classification using TensorFlow.
+          </p>
         </div>
         <div className="project-card">
           <h3>Data Analysis Tool</h3>
-          <p>Python script for analyzing and visualizing large datasets with pandas and matplotlib.</p>
+          <p>
+            Python script for analyzing and visualizing large datasets with
+            pandas and matplotlib.
+          </p>
         </div>
         <div className="project-card">
           <h3>Portfolio Website</h3>
-          <p>This responsive portfolio website built with Next.js and deployed on Vercel.</p>
+          <p>
+            This responsive portfolio website built with Next.js and deployed on
+            Vercel.
+          </p>
         </div>
       </section>
 
@@ -52,15 +78,18 @@ export default function Home() {
       <section className="contact">
         <h2>Get In Touch</h2>
         <p>
-          I'm currently looking for internship opportunities and excited to connect with fellow developers!
+          I'm currently looking for internship opportunities and excited to
+          connect with fellow developers!
         </p>
         <div className="contact-links">
-          <a href="https://github.com/Akari-08" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/Akari-08"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             GitHub
           </a>
-          <a href="mailto:your-email@example.com">
-            Email Me
-          </a>
+          <a href="mailto:your-email@example.com">Email Me</a>
         </div>
       </section>
 
